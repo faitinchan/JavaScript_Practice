@@ -14,3 +14,5 @@ Here is the place where I put all of my JavaScript practice projects.
 ## [5. CSS Variables](https://github.com/faitinchan/JavaScript_Practice/tree/main/CSS_Variables)
 ![image](https://github.com/faitinchan/JavaScript_Practice/blob/main/CSS_Variables/Variable.jpg)
 [Javascript 30: Playing with CSS Variables and JS](https://javascript30.com/) by [Wes Bos](https://x.com/intent/follow?original_referer=https%3A%2F%2Fjavascript30.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5Ewesbos&screen_name=wesbos)
+## [6. Array Practice 1](https://github.com/faitinchan/JavaScript_Practice/tree/main/Array_Practice_1)
+[Javascript 30: Array Cardio Day 1](https://javascript30.com/) by [Wes Bos](https://x.com/intent/follow?original_referer=https%3A%2F%2Fjavascript30.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5Ewesbos&screen_name=wesbos)
