@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array Cardio</title>
+</head>
+
+<body>
+	<p><em>Psst: have a look at the JavaScript Console</em></p>
+	<script>
+		const heros = [
+			{first: 'Albert', last: 'Einstein', year: 1879, passed: 1955},
+			{first: 'Tupac', last: 'Shakur', year: 1971, passed: 1996},
+			{first: 'Michael', last: 'Jackson', year: 1958, passed: 2009},
+			{first: 'Heath', last: 'Ledger', year: 1979, passed: 2008},
+			{first: 'M. C.', last: 'Escher', year: 1898, passed: 1972},
+			{first: 'J. S.', last: 'Bach', year: 1685, passed: 1750},
+			{first: 'Kurt', last: 'G\u00F6del', year: 1906, passed: 1978},
+			{first: 'Louis', last: 'Cha', year: 1924, passed: 2018},
+			{first: 'Friedrich', last: 'Nietzsche', year: 1844, passed: 1900},
+			{first: 'Charlie', last: 'Chaplin', year: 1889, passed: 1977},
+			{first: 'Ludwig', last: 'Wittgenstein', year: 1889, passed: 1951},
+			{first: 'J. R. R.', last: 'Tolkien', year: 1892, passed: 1973}
+		];
+
+		const people = [
+			'Piccard, Auguste', 'Henriot, \u00C9mile', 'Ehrenfest, Paul', 'Herzen, \u00C9douard', 'de Donder, Th\u00E9ophile', 'Schr\u00F6dinger, Erwin', 'Verschaffelt, JE',
+			'Pauli, Wolfgang', 'Heisenberg, Werner', 'Fowler, Ralph', 'Brillouin, L\u00E9on', 'Debye, Peter', 'Knudsen, Martin', 'Lawrence Bragg, William',
+			'Anthony Kramers, Hendrik', 'Dirac, Paul', 'Compton, Arthur', 'de Broglie, Louis', 'Born, Max', 'Bohr, Niels', 'Langmuir, Irving', 'Planck, Max', 'Curie, Marie',
+			'Lorentz, Hendrik', 'Einstein, Albert', 'Langevin, Paul', 'Guye, Charles-Eug\u00E8ne', 'Wilson, CTR', 'Richardson, Owen'
+		];	
+
+		// Array.prototype.filter()
+		// 1. Filter the list of heros for those who were born in the 1800's
+		const eighteen = heros.filter(hero => hero.year >= 1800 && hero.year < 1900);
+		console.table(eighteen);
+
+		// Array.prototype.map()
+		// 2. Give us an array of the heros first and last names
+		const fullNames = heros.map(hero => `${hero.first} ${hero.last}`);
+		console.log(fullNames);
+
+		// Array.prototype.sort()
+		// 3. Sort the heros by birthdate, oldest to youngest
+		const ordered = heros.sort((a, b) => a.year > b.year ? 1 : -1);
+		console.table(ordered);
+
+		// Array.prototype.reduce()
+		// 4. How many years did all the heros live all together?
+		const totalYears = heros.reduce((total, hero) => {
+			return total + (hero.passed - hero.year);
+		}, 0);
+		console.log(totalYears);
+
+		// 5. Sort the inventors by years lived
+		const oldest = heros.sort(function(a, b) {
+			const lastGuy = a.passed - a.year;
+			const nextGuy = b.passed - b.year;
+			return lastGuy > nextGuy ? -1 : 1;
+		});
+		console.table(oldest);
+
+		// 6. Create a list of Differential topology that contain 'space' anywhere in the name
+		// https://en.wikipedia.org/wiki/Category:Differential_topology
+		// const category = document.querySelector('#mw-pages');
+		// const links = Array.from(category.querySelectorAll('a'));
+		// const space = links
+		// 					.map(link => link.textContent)
+		//				 	.filter(topic => topic.includes('space'));
+
+		// 7. Sort Exercise
+		// Sort the people alphabetically by last name
+		const alpha = people.sort((lastOne, nextOne) => {
+			const [aLast, aFirst] = lastOne.split(', ');
+			const [bLast, bFirst] = nextOne.split(', ');
+			return aLast > bLast ? 1 : -1;
+		});
+		console.log(alpha);
+
+		// 8. Reduce Exercise
+		// Sum up the instances of each of these
+		const data = ['Honda', 'Honda', 'Subaru', 'Subaru', 'Toyota', 'Mini Cooper', 'Honda', 'Volkswagen', 'Toyota', 'Mini Cooper', 'Honda', 'Volkswagen', 'Honda', 'Subaru'];
+		const brands = data.reduce(function(obj, item) {
+			if(!obj[item]) {
+				obj[item] = 0;
+			}
+			obj[item]++;
+			return obj;
+		}, {});
+		console.log(brands);
+	</script>
+</body>
+</html>
