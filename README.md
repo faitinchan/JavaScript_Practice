@@ -18,4 +18,5 @@ Here is the place where I put all of my JavaScript practice projects.
 [Javascript 30: Array Cardio Day 1](https://javascript30.com/) by [Wes Bos](https://x.com/intent/follow?original_referer=https%3A%2F%2Fjavascript30.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5Ewesbos&screen_name=wesbos)
 ## [7. Flex Panels](https://github.com/faitinchan/JavaScript_Practice/tree/main/Flex_Panels)
 [https://github.com/faitinchan/JavaScript_Practice/blob/main/Flex_Panels/flex_panels.mp4](https://github.com/user-attachments/assets/2dbbd5a4-1ee8-4684-a9fc-89337070fc32)
+
 [Javascript 30: Flex Panels Image Gallery](https://javascript30.com/) by [Wes Bos](https://x.com/intent/follow?original_referer=https%3A%2F%2Fjavascript30.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5Ewesbos&screen_name=wesbos)
